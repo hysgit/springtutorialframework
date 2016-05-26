@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="circle" class="com.woslx.spring.beans.Circle" autowire-candidate="false">
+        <property name="autowire" value="name"></property>
+        <property name="id" value="circle"></property>
+    </bean>
+    <bean id="circle2" class="com.woslx.spring.beans.Circle">
+        <property name="autowire" value="type"></property>
+        <property name="id" value="circle2"></property>
+    </bean>
+
+    <!--shapeBox no wiring! -->
+    <bean id="shapeBox" class="com.woslx.spring.beans.ShapeBox"/>
+
+    <!--shapeBox wire by name -->
+    <bean id="shapeBox2" class="com.woslx.spring.beans.ShapeBox" autowire="byName"/>
+
+    <!--shapeBox wire by type -->
+    <bean id="shapeBox3" class="com.woslx.spring.beans.ShapeBox" autowire="byType"/>
+
+    <!--shapeBox wire by constructor -->
+    <bean id="shapeBox4" class="com.woslx.spring.beans.ShapeBox" autowire="constructor"/>
+
+</beans>

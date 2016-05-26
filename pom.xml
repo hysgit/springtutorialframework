@@ -6,9 +6,10 @@
   <artifactId>springtutorialframework</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>helloworld</module>
-    <module>helloworld2</module>
+    <module>01helloworld</module>
+    <module>02helloworld2</module>
     <module>03SpringConfiguration</module>
+    <module>04SpringBeanAutowiringXML</module>
   </modules>
   <packaging>pom</packaging>
 
