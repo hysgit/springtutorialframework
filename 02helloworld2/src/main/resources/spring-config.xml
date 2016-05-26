@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+    <bean id="circle" class="com.woslx.spring.beans.Circle"/>
+
+    <bean id="circle2" class="com.woslx.spring.beans.Circle">
+        <constructor-arg value="5"/>
+    </bean>
+
+    <bean id="shapePainter" class="com.woslx.spring.beans.ShapePainter">
+        <constructor-arg ref="circle" />
+        <constructor-arg value="blue"/>
+    </bean>
+    <bean id="shapePainter2" class="com.woslx.spring.beans.ShapePainter">
+        <constructor-arg value="blue"/>
+        <constructor-arg ref="circle" />
+    </bean>
+
+    <bean id="circle3" class="com.woslx.spring.beans.Circle" scope="prototype"/>
+
+    <bean id="fortest" class="com.woslx.spring.beans.ForTest">
+        <constructor-arg name="i2" value="1"/>
+        <constructor-arg name="i1" value="2"/>
+    </bean>
+
+    <bean id="fortest2" class="com.woslx.spring.beans.ForTest">
+        <constructor-arg type="java.lang.Integer" name="i2" value="1"/>
+        <constructor-arg name="i1" value="2"/>
+    </bean>
+
+    <bean id="circle4" class="com.woslx.spring.beans.Circle">
+        <property name="radius" value="4.0"/>
+    </bean>
+
+    <bean id="shapePainter3" class="com.woslx.spring.beans.ShapePainter">
+        <property name="shape" ref="circle"/>
+    </bean>
+
+    <bean id="shapePainter4" class="com.woslx.spring.beans.ShapePainter">
+        <property name="shape">
+            <bean class="com.woslx.spring.beans.Circle" />
+        </property>
+    </bean>
+
+    <bean id="shapePainter5" class="com.woslx.spring.beans.ShapePainter" init-method="paint">
+        <property name="shape">
+            <bean class="com.woslx.spring.beans.Circle" />
+        </property>
+        <property name="color" value="blue"/>
+    </bean>
+    <bean id="circle5" class="com.woslx.spring.beans.Circle" scope="prototype" destroy-method="destroy_method"/>
+    <bean id="circle6" class="com.woslx.spring.beans.Circle"  destroy-method="destroy_method"/>
+
+
+</beans>
