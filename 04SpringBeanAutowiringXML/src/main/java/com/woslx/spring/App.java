@@ -1,5 +1,6 @@
 package com.woslx.spring;
 
+import com.woslx.spring.beans.ShapeBox;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -14,6 +15,7 @@ public class App
 
         // Laod spring-config.xml file
         ctx = new ClassPathXmlApplicationContext("spring-config.xml");
-
+        ShapeBox shapeBox = (ShapeBox) ctx.getBean("shapeBox");
+        System.out.println(shapeBox.toString());
     }
 }

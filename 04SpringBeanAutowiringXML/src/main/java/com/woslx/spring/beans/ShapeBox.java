@@ -21,4 +21,11 @@ public class ShapeBox {
         this.circle = circle;
         System.out.println("ShapeBox autowire "+circle.getId()+" by "+circle.getAutowire());
     }
+
+    @Override
+    public String toString() {
+        return "ShapeBox{" +
+                "circle=" + circle +
+                '}';
+    }
 }
