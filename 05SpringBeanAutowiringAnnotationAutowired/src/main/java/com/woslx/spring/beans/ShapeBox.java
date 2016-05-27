@@ -18,10 +18,20 @@ public class ShapeBox {
     @Autowired(required=false)
     private Triangle triangle;
 
+    public ShapeBox()
+    {
+
+    }
+
     //( 2 ) Autowire constructor argument
-    @Autowired
+//    @Autowired
     public ShapeBox(Rectangle rectangle){
         System.out.println("Rectangle has been autowired to constructor");
+    }
+
+//    @Autowired
+    public ShapeBox(Circle circle){
+        System.out.println("Rectangle has been autowired to constructor and rectangle2");
     }
 
     //( 3 ) Autowire a method

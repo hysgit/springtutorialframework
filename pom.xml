@@ -11,6 +11,7 @@
     <module>03SpringConfiguration</module>
     <module>04SpringBeanAutowiringXML</module>
     <module>05SpringBeanAutowiringAnnotationAutowired</module>
+    <module>06SpringCustomEvents2</module>
   </modules>
   <packaging>pom</packaging>
 

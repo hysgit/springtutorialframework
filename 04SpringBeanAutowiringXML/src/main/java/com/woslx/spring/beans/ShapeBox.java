@@ -22,6 +22,11 @@ public class ShapeBox {
         System.out.println("ShapeBox autowire "+circle.getId()+" by "+circle.getAutowire());
     }
 
+    public void setMethod(Circle circle)
+    {
+        System.out.println("myMethod invoked!");
+    }
+
     @Override
     public String toString() {
         return "ShapeBox{" +

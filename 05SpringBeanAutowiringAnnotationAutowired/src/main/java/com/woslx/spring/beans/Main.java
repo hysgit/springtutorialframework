@@ -11,7 +11,7 @@ public class Main {
     public static void main(String args[]){
 
         // Laod spring-config.xml file
-        ctx = new ClassPathXmlApplicationContext("com/hmkcode/config/spring-config.xml");
+        ctx = new ClassPathXmlApplicationContext("spring-config.xml");
 
     }
 }
