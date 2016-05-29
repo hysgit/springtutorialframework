@@ -12,7 +12,7 @@ public class App
     public static void main( String[] args )
     {
         ClassPathXmlApplicationContext ctx = new ClassPathXmlApplicationContext("spring-config.xml");
-
+        System.out.println("ctx.hashCode(): "+ctx.hashCode());
         Login login = (Login) ctx.getBean("login");
         login.login();
     }
