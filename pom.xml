@@ -13,6 +13,7 @@
     <module>05SpringBeanAutowiringAnnotationAutowired</module>
     <module>06SpringCustomEvents2</module>
     <module>07SpringProfile</module>
+    <module>20SpringFrameworkJDBCJdbcTemplate</module>
   </modules>
   <packaging>pom</packaging>
 
