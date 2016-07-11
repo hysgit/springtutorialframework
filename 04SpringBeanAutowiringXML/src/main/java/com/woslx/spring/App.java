@@ -17,5 +17,14 @@ public class App
         ctx = new ClassPathXmlApplicationContext("spring-config.xml");
         ShapeBox shapeBox = (ShapeBox) ctx.getBean("shapeBox");
         System.out.println(shapeBox.toString());
+
+        shapeBox = (ShapeBox) ctx.getBean("shapeBox2");
+        System.out.println(shapeBox.toString());
+
+        shapeBox = (ShapeBox) ctx.getBean("shapeBox3");
+        System.out.println(shapeBox.toString());
+
+        shapeBox = (ShapeBox) ctx.getBean("shapeBox4");
+        System.out.println(shapeBox.toString());
     }
 }

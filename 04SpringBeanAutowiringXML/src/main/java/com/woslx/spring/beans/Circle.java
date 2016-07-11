@@ -24,4 +24,12 @@ public class Circle {
     public void setId(String id) {
         this.id = id;
     }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "autowire='" + autowire + '\'' +
+                ", id='" + id + '\'' +
+                '}';
+    }
 }

@@ -10,6 +10,10 @@
         <constructor-arg value="5"/>
     </bean>
 
+    <bean id="circle2_1" class="com.woslx.spring.test.Circle2">
+        <constructor-arg  type="java.lang.String" value="5"/>
+    </bean>
+
     <bean id="shapePainter" class="com.woslx.spring.beans.ShapePainter">
         <constructor-arg ref="circle" />
         <constructor-arg value="blue"/>
@@ -22,13 +26,13 @@
     <bean id="circle3" class="com.woslx.spring.beans.Circle" scope="prototype"/>
 
     <bean id="fortest" class="com.woslx.spring.beans.ForTest">
-        <constructor-arg name="i2" value="1"/>
-        <constructor-arg name="i1" value="2"/>
+        <constructor-arg name="i22" value="1"/>
+        <constructor-arg name="i11" value="2"/>
     </bean>
 
     <bean id="fortest2" class="com.woslx.spring.beans.ForTest">
-        <constructor-arg type="java.lang.Integer" name="i2" value="1"/>
-        <constructor-arg name="i1" value="2"/>
+        <constructor-arg type="java.lang.Integer" name="i22" value="1"/>
+        <constructor-arg name="i11" value="2"/>
     </bean>
 
     <bean id="circle4" class="com.woslx.spring.beans.Circle">

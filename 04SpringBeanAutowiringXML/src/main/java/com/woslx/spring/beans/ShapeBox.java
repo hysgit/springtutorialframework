@@ -6,25 +6,30 @@ package com.woslx.spring.beans;
 public class ShapeBox {
     private Circle circle;
 
-    public ShapeBox(){
+    public ShapeBox() {
 
     }
 
-    public ShapeBox(Circle circle){
-        System.out.println("ShapeBox autowire "+circle.getId()+" by constructor");
+    public ShapeBox(Circle circle) {
+        this.circle=circle;
+        System.out.println("ShapeBox autowire " + circle.getId() + " by constructor");
     }
+
     public Circle getCircle() {
         return circle;
     }
 
     public void setCircle(Circle circle) {
         this.circle = circle;
-        System.out.println("ShapeBox autowire "+circle.getId()+" by "+circle.getAutowire());
+        System.out.println("ShapeBox autowire " + circle.getId() + " by " + circle.getAutowire());
     }
 
-    public void setMethod(Circle circle)
-    {
+    public void setMethod(Circle circle) {
         System.out.println("myMethod invoked!");
+    }
+
+    public void setCate(Circle circle) {
+        System.out.println("setCate invoked!");
     }
 
     @Override

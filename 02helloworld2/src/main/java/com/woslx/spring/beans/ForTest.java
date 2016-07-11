@@ -9,9 +9,9 @@ public class ForTest
     private Integer i2;
 
 
-    public ForTest(Integer i2, Integer i1) {
-        this.i2 = i2;
-        this.i1 = i1;
+    public ForTest(Integer i22, Integer i11) {
+        this.i2 = i22;
+        this.i1 = i11;
     }
 
     public Integer getI1() {
