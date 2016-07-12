@@ -15,6 +15,7 @@
         <module>07SpringProfile</module>
         <module>09FirstTimeSpringAOP</module>
         <module>20SpringFrameworkJDBCJdbcTemplate</module>
+        <module>10FirstTimeSpringAOPAnnotation</module>
 
     </modules>
     <packaging>pom</packaging>
