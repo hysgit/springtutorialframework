@@ -12,6 +12,9 @@ public class Main {
 
         // Laod spring-config.xml file
         ctx = new ClassPathXmlApplicationContext("spring-config.xml");
+//        System.out.println(ctx.getBean("circle").toString());
+        System.out.println(ctx.getBean("c2").toString());
+        System.out.println(ctx.getBean("shapeBox").toString());
 
     }
 }

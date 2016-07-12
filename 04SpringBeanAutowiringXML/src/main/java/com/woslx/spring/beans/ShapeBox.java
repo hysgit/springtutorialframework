@@ -32,6 +32,19 @@ public class ShapeBox {
         System.out.println("setCate invoked!");
     }
 
+        public void setCircle3(Circle2 circle) {
+        System.out.println("setCircle2 invoked!");
+    }
+    public void setMethod2(Circle c2) {
+        System.out.println("setMethod2 invoked!"+c2);
+    }
+
+
+
+    public void seate(Circle circle) {
+        System.out.println("seate invoked!");
+    }
+
     @Override
     public String toString() {
         return "ShapeBox{" +

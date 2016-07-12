@@ -29,7 +29,7 @@ public class ShapeBox {
         System.out.println("Rectangle has been autowired to constructor");
     }
 
-//    @Autowired
+    @Autowired
     public ShapeBox(Circle circle){
         System.out.println("Rectangle has been autowired to constructor and rectangle2");
     }
@@ -40,6 +40,7 @@ public class ShapeBox {
     //this example shows that cirlce has been set before set method is called
     @Autowired
     public void setCircle(Circle circle) {
+        System.out.println("setCircle："+circle);
         if(this.circle != null ){
             System.out.println("Circle has been autowired to property \""+
                     "this setCircle has been called because it has @Autowired\"");
@@ -55,6 +56,14 @@ public class ShapeBox {
     @Autowired
     @Qualifier("c2")
     public void drawCircle(Circle circle) {
-        System.out.println("Drawing autowired Circle (c2) ");
+        System.out.println("Drawing autowired Circle (c2) "+circle.toString());
+    }
+
+    @Override
+    public String toString() {
+        return "ShapeBox{" +
+                "circle=" + circle +
+                ", triangle=" + triangle +
+                '}';
     }
 }
