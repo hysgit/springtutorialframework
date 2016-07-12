@@ -1,27 +1,32 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
 
-  <groupId>com.woslx.spring</groupId>
-  <artifactId>springtutorialframework</artifactId>
-  <version>1.0-SNAPSHOT</version>
-  <modules>
-    <module>01helloworld</module>
-    <module>02helloworld2</module>
-    <module>03SpringConfiguration</module>
-    <module>04SpringBeanAutowiringXML</module>
-    <module>05SpringBeanAutowiringAnnotationAutowired</module>
-    <module>06SpringCustomEvents2</module>
-    <module>07SpringProfile</module>
-    <module>20SpringFrameworkJDBCJdbcTemplate</module>
-  </modules>
-  <packaging>pom</packaging>
+    <groupId>com.woslx.spring</groupId>
+    <artifactId>springtutorialframework</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>01helloworld</module>
+        <module>02helloworld2</module>
+        <module>03SpringConfiguration</module>
+        <module>04SpringBeanAutowiringXML</module>
+        <module>05SpringBeanAutowiringAnnotationAutowired</module>
+        <module>06SpringCustomEvents2</module>
+        <module>07SpringProfile</module>
+        <module>09FirstTimeSpringAOP</module>
+        <module>20SpringFrameworkJDBCJdbcTemplate</module>
 
-  <name>springtutorialframework</name>
-  <url>http://maven.apache.org</url>
+    </modules>
+    <packaging>pom</packaging>
 
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
+    <name>springtutorialframework</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+
+
 
 </project>
